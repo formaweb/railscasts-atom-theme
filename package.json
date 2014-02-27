@@ -1,9 +1,9 @@
 {
   "name": "railscasts-theme",
   "theme": "syntax",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
-  "description": "Custom made and based off of the theme by idlefingers.",
+  "description": "Port from original Railscasts TextMate theme.",
   "repository": "https://github.com/formaweb/railscasts-atom-theme",
   "license": "MIT",
   "engines": {
