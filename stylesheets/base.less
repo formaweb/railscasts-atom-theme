@@ -1,0 +1,117 @@
+@import "ui-variables";
+@import "colors";
+
+.editor-colors {
+  background-color: @background;
+  color: @foreground;
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @invisible;
+  }
+
+  .gutter {
+    background-color: @gutterBackground;
+  }
+
+  .gutter .line-number {
+    opacity: 0.15;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    background-color: darken(@gutterBackground, 5%);
+  }
+
+  .cursor {
+    border-color: @foreground;
+  }
+
+  .selection .region {
+    background-color: darken(@background, 5%);
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: darken(@gutterBackground, 2%);
+  }
+}
+
+.bracket-matcher {
+  background-color: darken(@background, 10%);
+  opacity: 0.25;
+}
+
+.comment {
+  color: @commentForeground;
+  font-style: italic;
+}
+
+.entity {
+  color: @entityForeground;
+}
+
+.keyword, .storage.type {
+  color: @keywordForeground;
+}
+
+.constant {
+  color: @constantForeground;
+
+  &.numeric,
+  &.boolean {
+    color: @numericConstantForeground;
+  }
+}
+
+.variable {
+  color: @variableForeground;
+}
+
+.delimiter, .brace {
+  color: @foreground;
+}
+
+.delimiter.period {
+  color: lighten(@stringForeground, 15%);
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @attention;
+}
+
+.invalid.illegal {
+  color: @attention;
+}
+
+.string {
+  color: @stringForeground;
+
+  .constant.character.escape {
+    color: @constantForeground;
+  }
+
+  &.regexp {
+    color: lighten(@stringForeground, 15%);
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @attention;
+    }
+  }
+}
+
+.function {
+  color: @functionForeground;
+
+  &.punctuation {
+    color: @foreground;
+  }
+}
+
+.property-name {
+  color: lighten(@constantForeground, 10%);
+}

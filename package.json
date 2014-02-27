@@ -1,0 +1,12 @@
+{
+  "name": "railscasts-theme",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Custom made and based off of the theme by idlefingers.",
+  "repository": "https://github.com/formaweb/railscasts-atom-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
