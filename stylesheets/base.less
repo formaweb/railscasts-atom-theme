@@ -1,12 +1,12 @@
 @import "ui-variables";
 @import "colors";
 
-.editor-colors {
+:host, atom-text-editor {
   background-color: @background;
   color: @foreground;
 }
 
-.editor {
+:host, atom-text-editor {
   .invisible-character,
   .indent-guide {
     color: @invisible;
@@ -31,7 +31,7 @@
   }
 
   .selection .region {
-    background-color: darken(@background, 5%);
+    background-color: lighten(@background, 5%);
   }
 
   .line-number.cursor-line-no-selection {
@@ -39,7 +39,7 @@
   }
 }
 
-.bracket-matcher {
+.bracket-matcher .region {
   background-color: darken(@background, 10%);
   opacity: 0.25;
 }
